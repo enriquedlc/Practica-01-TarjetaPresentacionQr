@@ -12,7 +12,12 @@ export default function App() {
         <Text style={styles.headerText}>José Enrique De La Concepción De Masi</Text>
       </View>
       <View style={styles.description}>
-        <Text>description</Text>
+        <Text style={styles.descriptionText}>
+          Hola! mi nombre es Enrique y soy estudiante de 2º de DAM.
+          Últimamente disfruto mucho de las cosas que hacemos en clase.
+          Me gusta entrenar y pasar tiempo con personas cercanas.
+          Mi objetivo este año es aprender lo más que pueda para salir preparado al mundo laboral.
+        </Text>
       </View>
       <View style={styles.qrCode}>
         <Text>qrCode</Text>
@@ -78,5 +83,9 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginTop: 30,
     marginLeft: 110
+  },
+
+  descriptionText: {
+    marginHorizontal: 10
   }
 });
