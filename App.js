@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>photo and name</Text>
+        <Image 
+        style={styles.headerImage} 
+        source={require('./assets/perfPhoto.jpeg')}>
+        </Image>
+        <Text style={styles.headerText}>José Enrique De La Concepción De Masi</Text>
       </View>
       <View style={styles.description}>
         <Text>description</Text>
@@ -25,16 +29,18 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 
   header: {
     flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    justifyContent: 'center',
     flex: 1,
     borderColor: 'pink',
     borderWidth: 2,
-    width: '100%'
+    width: '100%',
+    backgroundColor: 'gray'
   },
 
   description: {
@@ -58,6 +64,19 @@ const styles = StyleSheet.create({
   },
 
   headerText: {
-    marginTop: 60
+    marginTop: 30,
+    marginRight: 110,
+    marginLeft: 15,
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'white'
+  },
+
+  headerImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    marginTop: 30,
+    marginLeft: 110
   }
 });
