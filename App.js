@@ -5,9 +5,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image
-          style={styles.headerImage}
-          source={require('./assets/perfPhoto.jpeg')}>
+        <Image 
+        style={styles.headerImage} 
+        source={require('./assets/perfPhoto.jpeg')}>
         </Image>
         <Text style={styles.headerText}>José Enrique De La Concepción De Masi</Text>
       </View>
@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    borderWidth: 2,
     width: '100%',
     backgroundColor: 'gray'
   },
@@ -51,7 +50,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 2,
     width: '100%'
   },
 
@@ -60,7 +58,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 2,
     width: '100%'
   },
 
