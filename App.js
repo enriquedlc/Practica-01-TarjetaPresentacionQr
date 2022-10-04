@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     flex: 1,
     borderColor: 'pink',
     borderWidth: 2,
@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
 
   headerText: {
     marginTop: 30,
-    marginRight: 110,
     marginLeft: 15,
     fontSize: 25,
     fontWeight: 'bold',
@@ -76,7 +75,6 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     borderRadius: 50,
-    marginTop: 30,
-    marginLeft: 110
+    marginTop: 30
   }
 });
