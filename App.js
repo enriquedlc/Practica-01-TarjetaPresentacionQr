@@ -20,7 +20,7 @@ export default function App() {
         </Text>
       </View>
       <View style={styles.qrCode}>
-        <QRCode value="https://github.com/enriquedlc">
+        <QRCode style={styles.qrCodePosition} value="https://github.com/enriquedlc">
         </QRCode>
       </View>
     </View>
